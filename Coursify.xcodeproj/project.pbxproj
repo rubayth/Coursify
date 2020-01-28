@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA31D97923D6839700D2EF3D /* CourseInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA31D97823D6839700D2EF3D /* CourseInfoViewController.swift */; };
+		CAD39FD923D6188A009CB761 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD39FD823D6188A009CB761 /* AppDelegate.swift */; };
+		CAD39FDB23D6188A009CB761 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD39FDA23D6188A009CB761 /* SceneDelegate.swift */; };
+		CAD39FDD23D6188A009CB761 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD39FDC23D6188A009CB761 /* HomeViewController.swift */; };
+		CAD39FE023D6188B009CB761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD39FDE23D6188B009CB761 /* Main.storyboard */; };
+		CAD39FE323D6188B009CB761 /* Coursify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAD39FE123D6188B009CB761 /* Coursify.xcdatamodeld */; };
+		CAD39FE523D6188E009CB761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD39FE423D6188E009CB761 /* Assets.xcassets */; };
+		CAD39FE823D6188E009CB761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD39FE623D6188E009CB761 /* LaunchScreen.storyboard */; };
+		CAD39FF323D6188E009CB761 /* CoursifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD39FF223D6188E009CB761 /* CoursifyTests.swift */; };
+		CAD3A00323D61AF4009CB761 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3A00223D61AF4009CB761 /* HomeRouter.swift */; };
+		CAD41C0E23D61D67008CA038 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD41C0D23D61D67008CA038 /* HomeInteractor.swift */; };
+		CAD41C1023D61D75008CA038 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD41C0F23D61D75008CA038 /* HomePresenter.swift */; };
+		CAD41C1223D62854008CA038 /* CourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD41C1123D62854008CA038 /* CourseData.swift */; };
+		CAD41C1423D62BC1008CA038 /* CourseModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD41C1323D62BC1008CA038 /* CourseModal.swift */; };
+		CAD41C1623D63992008CA038 /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = CAD41C1523D63992008CA038 /* testData.json */; };
+		CAFC961123D77BE000D8E67D /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC960F23D77BE000D8E67D /* CourseRow.swift */; };
+		CAFC961223D77BE000D8E67D /* CourseRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFC961023D77BE000D8E67D /* CourseRow.xib */; };
+		CAFC961523D7800300D8E67D /* CourseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC961323D7800300D8E67D /* CourseCollectionViewCell.swift */; };
+		CAFC961623D7800300D8E67D /* CourseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFC961423D7800300D8E67D /* CourseCollectionViewCell.xib */; };
+		CAFC961A23DA2DD500D8E67D /* CourseInfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC961923DA2DD500D8E67D /* CourseInfoRouter.swift */; };
+		CAFC961C23DA2DEF00D8E67D /* CourseInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC961B23DA2DEF00D8E67D /* CourseInfoPresenter.swift */; };
+		CAFC961E23DA2E0700D8E67D /* CourseInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC961D23DA2E0700D8E67D /* CourseInfoInteractor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAD39FEF23D6188E009CB761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAD39FCD23D6188A009CB761 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAD39FD423D6188A009CB761;
+			remoteInfo = Coursify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA31D97823D6839700D2EF3D /* CourseInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoViewController.swift; sourceTree = "<group>"; };
+		CAD39FD523D6188A009CB761 /* Coursify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coursify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD39FD823D6188A009CB761 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAD39FDA23D6188A009CB761 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CAD39FDC23D6188A009CB761 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CAD39FDF23D6188B009CB761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAD39FE223D6188B009CB761 /* Coursify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coursify.xcdatamodel; sourceTree = "<group>"; };
+		CAD39FE423D6188E009CB761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAD39FE723D6188E009CB761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAD39FE923D6188E009CB761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAD39FEE23D6188E009CB761 /* CoursifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoursifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD39FF223D6188E009CB761 /* CoursifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursifyTests.swift; sourceTree = "<group>"; };
+		CAD39FF423D6188E009CB761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAD3A00223D61AF4009CB761 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		CAD41C0D23D61D67008CA038 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		CAD41C0F23D61D75008CA038 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		CAD41C1123D62854008CA038 /* CourseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseData.swift; sourceTree = "<group>"; };
+		CAD41C1323D62BC1008CA038 /* CourseModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModal.swift; sourceTree = "<group>"; };
+		CAD41C1523D63992008CA038 /* testData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testData.json; sourceTree = "<group>"; };
+		CAFC960F23D77BE000D8E67D /* CourseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRow.swift; sourceTree = "<group>"; };
+		CAFC961023D77BE000D8E67D /* CourseRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseRow.xib; sourceTree = "<group>"; };
+		CAFC961323D7800300D8E67D /* CourseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCollectionViewCell.swift; sourceTree = "<group>"; };
+		CAFC961423D7800300D8E67D /* CourseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseCollectionViewCell.xib; sourceTree = "<group>"; };
+		CAFC961923DA2DD500D8E67D /* CourseInfoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoRouter.swift; sourceTree = "<group>"; };
+		CAFC961B23DA2DEF00D8E67D /* CourseInfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoPresenter.swift; sourceTree = "<group>"; };
+		CAFC961D23DA2E0700D8E67D /* CourseInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoInteractor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAD39FD223D6188A009CB761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD39FEB23D6188E009CB761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAD39FCC23D6188A009CB761 = {
+			isa = PBXGroup;
+			children = (
+				CAD39FD723D6188A009CB761 /* Coursify */,
+				CAD39FF123D6188E009CB761 /* CoursifyTests */,
+				CAD39FD623D6188A009CB761 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAD39FD623D6188A009CB761 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAD39FD523D6188A009CB761 /* Coursify.app */,
+				CAD39FEE23D6188E009CB761 /* CoursifyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAD39FD723D6188A009CB761 /* Coursify */ = {
+			isa = PBXGroup;
+			children = (
+				CAD39FD823D6188A009CB761 /* AppDelegate.swift */,
+				CAD39FDA23D6188A009CB761 /* SceneDelegate.swift */,
+				CAD39FDE23D6188B009CB761 /* Main.storyboard */,
+				CAFC961823DA2D3500D8E67D /* CourseInfoModule */,
+				CAFC961723DA2B4700D8E67D /* HomeModule */,
+				CAD39FE423D6188E009CB761 /* Assets.xcassets */,
+				CAD39FE923D6188E009CB761 /* Info.plist */,
+				CAD39FE623D6188E009CB761 /* LaunchScreen.storyboard */,
+				CAD39FE123D6188B009CB761 /* Coursify.xcdatamodeld */,
+			);
+			path = Coursify;
+			sourceTree = "<group>";
+		};
+		CAD39FF123D6188E009CB761 /* CoursifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAD39FF223D6188E009CB761 /* CoursifyTests.swift */,
+				CAD39FF423D6188E009CB761 /* Info.plist */,
+			);
+			path = CoursifyTests;
+			sourceTree = "<group>";
+		};
+		CAD39FFD23D61A59009CB761 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				CAD41C1123D62854008CA038 /* CourseData.swift */,
+				CAD41C1323D62BC1008CA038 /* CourseModal.swift */,
+				CAD41C1523D63992008CA038 /* testData.json */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		CAD39FFF23D61A63009CB761 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CAD39FDC23D6188A009CB761 /* HomeViewController.swift */,
+				CAFC960F23D77BE000D8E67D /* CourseRow.swift */,
+				CAFC961023D77BE000D8E67D /* CourseRow.xib */,
+				CAFC961323D7800300D8E67D /* CourseCollectionViewCell.swift */,
+				CAFC961423D7800300D8E67D /* CourseCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAFC961723DA2B4700D8E67D /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				CAD39FFF23D61A63009CB761 /* View */,
+				CAD39FFD23D61A59009CB761 /* Modal */,
+				CAD3A00223D61AF4009CB761 /* HomeRouter.swift */,
+				CAD41C0D23D61D67008CA038 /* HomeInteractor.swift */,
+				CAD41C0F23D61D75008CA038 /* HomePresenter.swift */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		CAFC961823DA2D3500D8E67D /* CourseInfoModule */ = {
+			isa = PBXGroup;
+			children = (
+				CA31D97823D6839700D2EF3D /* CourseInfoViewController.swift */,
+				CAFC961923DA2DD500D8E67D /* CourseInfoRouter.swift */,
+				CAFC961B23DA2DEF00D8E67D /* CourseInfoPresenter.swift */,
+				CAFC961D23DA2E0700D8E67D /* CourseInfoInteractor.swift */,
+			);
+			path = CourseInfoModule;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAD39FD423D6188A009CB761 /* Coursify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAD39FF723D6188E009CB761 /* Build configuration list for PBXNativeTarget "Coursify" */;
+			buildPhases = (
+				CAD39FD123D6188A009CB761 /* Sources */,
+				CAD39FD223D6188A009CB761 /* Frameworks */,
+				CAD39FD323D6188A009CB761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Coursify;
+			productName = Coursify;
+			productReference = CAD39FD523D6188A009CB761 /* Coursify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAD39FED23D6188E009CB761 /* CoursifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAD39FFA23D6188E009CB761 /* Build configuration list for PBXNativeTarget "CoursifyTests" */;
+			buildPhases = (
+				CAD39FEA23D6188E009CB761 /* Sources */,
+				CAD39FEB23D6188E009CB761 /* Frameworks */,
+				CAD39FEC23D6188E009CB761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAD39FF023D6188E009CB761 /* PBXTargetDependency */,
+			);
+			name = CoursifyTests;
+			productName = CoursifyTests;
+			productReference = CAD39FEE23D6188E009CB761 /* CoursifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAD39FCD23D6188A009CB761 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Rubayth;
+				TargetAttributes = {
+					CAD39FD423D6188A009CB761 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					CAD39FED23D6188E009CB761 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = CAD39FD423D6188A009CB761;
+					};
+				};
+			};
+			buildConfigurationList = CAD39FD023D6188A009CB761 /* Build configuration list for PBXProject "Coursify" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAD39FCC23D6188A009CB761;
+			productRefGroup = CAD39FD623D6188A009CB761 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAD39FD423D6188A009CB761 /* Coursify */,
+				CAD39FED23D6188E009CB761 /* CoursifyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAD39FD323D6188A009CB761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD39FE823D6188E009CB761 /* LaunchScreen.storyboard in Resources */,
+				CAD39FE523D6188E009CB761 /* Assets.xcassets in Resources */,
+				CAD39FE023D6188B009CB761 /* Main.storyboard in Resources */,
+				CAD41C1623D63992008CA038 /* testData.json in Resources */,
+				CAFC961223D77BE000D8E67D /* CourseRow.xib in Resources */,
+				CAFC961623D7800300D8E67D /* CourseCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD39FEC23D6188E009CB761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAD39FD123D6188A009CB761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD41C1023D61D75008CA038 /* HomePresenter.swift in Sources */,
+				CAFC961E23DA2E0700D8E67D /* CourseInfoInteractor.swift in Sources */,
+				CAFC961523D7800300D8E67D /* CourseCollectionViewCell.swift in Sources */,
+				CAD39FDD23D6188A009CB761 /* HomeViewController.swift in Sources */,
+				CAD39FE323D6188B009CB761 /* Coursify.xcdatamodeld in Sources */,
+				CAD39FD923D6188A009CB761 /* AppDelegate.swift in Sources */,
+				CAFC961C23DA2DEF00D8E67D /* CourseInfoPresenter.swift in Sources */,
+				CAD41C0E23D61D67008CA038 /* HomeInteractor.swift in Sources */,
+				CAD39FDB23D6188A009CB761 /* SceneDelegate.swift in Sources */,
+				CAFC961123D77BE000D8E67D /* CourseRow.swift in Sources */,
+				CAD41C1423D62BC1008CA038 /* CourseModal.swift in Sources */,
+				CAD41C1223D62854008CA038 /* CourseData.swift in Sources */,
+				CAD3A00323D61AF4009CB761 /* HomeRouter.swift in Sources */,
+				CAFC961A23DA2DD500D8E67D /* CourseInfoRouter.swift in Sources */,
+				CA31D97923D6839700D2EF3D /* CourseInfoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD39FEA23D6188E009CB761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD39FF323D6188E009CB761 /* CoursifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAD39FF023D6188E009CB761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAD39FD423D6188A009CB761 /* Coursify */;
+			targetProxy = CAD39FEF23D6188E009CB761 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAD39FDE23D6188B009CB761 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAD39FDF23D6188B009CB761 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAD39FE623D6188E009CB761 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAD39FE723D6188E009CB761 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAD39FF523D6188E009CB761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAD39FF623D6188E009CB761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAD39FF823D6188E009CB761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL4PC23YS3;
+				INFOPLIST_FILE = Coursify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rubayth.Coursify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAD39FF923D6188E009CB761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL4PC23YS3;
+				INFOPLIST_FILE = Coursify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rubayth.Coursify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CAD39FFB23D6188E009CB761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL4PC23YS3;
+				INFOPLIST_FILE = CoursifyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rubayth.CoursifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coursify.app/Coursify";
+			};
+			name = Debug;
+		};
+		CAD39FFC23D6188E009CB761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL4PC23YS3;
+				INFOPLIST_FILE = CoursifyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rubayth.CoursifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coursify.app/Coursify";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAD39FD023D6188A009CB761 /* Build configuration list for PBXProject "Coursify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD39FF523D6188E009CB761 /* Debug */,
+				CAD39FF623D6188E009CB761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAD39FF723D6188E009CB761 /* Build configuration list for PBXNativeTarget "Coursify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD39FF823D6188E009CB761 /* Debug */,
+				CAD39FF923D6188E009CB761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAD39FFA23D6188E009CB761 /* Build configuration list for PBXNativeTarget "CoursifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD39FFB23D6188E009CB761 /* Debug */,
+				CAD39FFC23D6188E009CB761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CAD39FE123D6188B009CB761 /* Coursify.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CAD39FE223D6188B009CB761 /* Coursify.xcdatamodel */,
+			);
+			currentVersion = CAD39FE223D6188B009CB761 /* Coursify.xcdatamodel */;
+			path = Coursify.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CAD39FCD23D6188A009CB761 /* Project object */;
+}

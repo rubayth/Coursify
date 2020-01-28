@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TPn-fS-EaS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeView" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Coursify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3sn-cP-ggk">
+                                <rect key="frame" x="0.0" y="98" width="414" height="798"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Courses" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZXp-pH-ZHi">
+                                <rect key="frame" x="30" y="54" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3sn-cP-ggk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0wU-TU-CF4"/>
+                            <constraint firstItem="3sn-cP-ggk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2ZG-Y4-xXE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZXp-pH-ZHi" secondAttribute="trailing" constant="30" id="Iuk-HV-sAC"/>
+                            <constraint firstItem="ZXp-pH-ZHi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Ldq-VH-wqs"/>
+                            <constraint firstItem="3sn-cP-ggk" firstAttribute="top" secondItem="ZXp-pH-ZHi" secondAttribute="bottom" constant="10" id="Q36-VX-msw"/>
+                            <constraint firstItem="ZXp-pH-ZHi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="bDa-yJ-WsF"/>
+                            <constraint firstAttribute="bottom" secondItem="3sn-cP-ggk" secondAttribute="bottom" id="vCe-fg-jJk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jir-cW-Bbg"/>
+                    <connections>
+                        <outlet property="searchTextfield" destination="ZXp-pH-ZHi" id="TLb-EZ-MWh"/>
+                        <outlet property="tableView" destination="3sn-cP-ggk" id="pyI-v7-bST"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Course Info View Controller-->
+        <scene sceneID="ZSz-wx-YTy">
+            <objects>
+                <viewController storyboardIdentifier="CourseInfoView" id="gZr-UR-R5i" customClass="CourseInfoViewController" customModule="Coursify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zyl-cu-Xfy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ljs-kP-QEV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCT - 2410" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndF-lX-dhE">
+                                        <rect key="frame" x="91" y="0.0" width="232.5" height="198.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjk-Jh-fQG">
+                                        <rect key="frame" x="190.5" y="206.5" width="33.5" height="198.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dayOfWeek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNK-LP-1rs">
+                                        <rect key="frame" x="162.5" y="413" width="89" height="198.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enrollment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoV-yV-z1I">
+                                        <rect key="frame" x="166.5" y="619.5" width="81.5" height="198.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ljs-kP-QEV" firstAttribute="top" secondItem="VWp-zr-rkZ" secondAttribute="top" id="BhR-jj-nWs"/>
+                            <constraint firstItem="Ljs-kP-QEV" firstAttribute="leading" secondItem="VWp-zr-rkZ" secondAttribute="leading" id="CeY-rb-VZ3"/>
+                            <constraint firstItem="VWp-zr-rkZ" firstAttribute="bottom" secondItem="Ljs-kP-QEV" secondAttribute="bottom" id="djZ-dU-0DV"/>
+                            <constraint firstItem="VWp-zr-rkZ" firstAttribute="trailing" secondItem="Ljs-kP-QEV" secondAttribute="trailing" id="q4t-a9-Dvh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VWp-zr-rkZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nk6-1e-0tk">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="XkL-7L-ZdW"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dayOfWeekLabel" destination="yNK-LP-1rs" id="Z6E-li-Hri"/>
+                        <outlet property="enrollmentLabel" destination="VoV-yV-z1I" id="tod-B9-8QW"/>
+                        <outlet property="professorLabel" destination="ndF-lX-dhE" id="rcm-PT-b2W"/>
+                        <outlet property="timeLabel" destination="Vjk-Jh-fQG" id="Dsa-N2-SJl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLa-jh-Csl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852" y="141"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ahN-sQ-EO5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TPn-fS-EaS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rje-NL-rHH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.4392156862745098" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.4375130236" blue="0.28767403959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Asc-ek-iSh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="139"/>
+        </scene>
+    </scenes>
+</document>
