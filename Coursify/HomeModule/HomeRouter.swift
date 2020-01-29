@@ -9,7 +9,7 @@
 import UIKit
 
 protocol HomeRoutable {
-    func navigateToCourseDetails(course: Course)
+    func navigateToCourseDetails(course: Course, relatedCourses: CourseModal?)
 }
 
 class HomeRouter {
@@ -35,8 +35,8 @@ class HomeRouter {
 
 extension HomeRouter: HomeRoutable{
     
-    func navigateToCourseDetails(course: Course){
-        let view = CourseInfoRouter.createModule(using: navigationController, course: course)
+    func navigateToCourseDetails(course: Course, relatedCourses: CourseModal?){
+        let view = CourseInfoRouter.createModule(using: navigationController, course: course, relatedCourses: relatedCourses)
         navigationController.pushViewController(view, animated: true)
     }
     

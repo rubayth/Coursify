@@ -58,7 +58,18 @@ extension HomePresenter: HomePresentable {
     }
     
     func didSelectCourse(course: Course) {
-        router.navigateToCourseDetails(course: course)
+        var relatedCourses = courses
+        let newData = (courses?.courseData.data.filter({ (courseItem) -> Bool in
+            guard let subject = courseItem?.subject else { return false }
+            
+            if subject.contains(course.subject!.uppercased()) {
+                return true
+            } else {
+                return false
+            }
+        }))!
+        relatedCourses?.updateData(newData)
+        router.navigateToCourseDetails(course: course, relatedCourses: relatedCourses)
     }
     
     func getCourses() -> CourseModal?{

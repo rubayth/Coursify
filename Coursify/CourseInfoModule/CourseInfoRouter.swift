@@ -19,12 +19,12 @@ class CourseInfoRouter {
         self.navigationController = navigationController
     }
     
-    static func createModule(using navigationController:UINavigationController, course: Course) -> CourseInfoViewController {
+    static func createModule(using navigationController:UINavigationController, course: Course, relatedCourses: CourseModal?) -> CourseInfoViewController {
         // Create layers
         let router = CourseInfoRouter(navigationController: navigationController)
         let interactor = CourseInfoInteractor()
         let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CourseInfoView") as! CourseInfoViewController
-        let presenter = CourseInfoPresenter(view: view, router: router, interactor: interactor, course: course)
+        let presenter = CourseInfoPresenter(view: view, router: router, interactor: interactor, course: course, relatedCourses: relatedCourses)
         view.presenter = presenter
         
         return view

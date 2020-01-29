@@ -40,11 +40,11 @@ class CourseRow: UITableViewCell {
         //setHeightOfCollectionView()
     }
     
-    func setHeightOfCollectionView(){
-        let width = collectionView.bounds.width
-        let height = 120
-        collectionHeightConstraint.constant = 120
-    }
+//    func setHeightOfCollectionView(){
+//        let width = collectionView.bounds.width
+//        let height = 120
+//        collectionHeightConstraint.constant = 120
+//    }
     
 }
 
@@ -78,8 +78,8 @@ extension CourseRow: UICollectionViewDataSource, UICollectionViewDelegateFlowLay
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let collectionViewHeight = collectionView.bounds.height
-        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+//        let collectionViewHeight = collectionView.bounds.height
+//        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
         
         //        let rows: CGFloat = 1
         //        let spaceBetweenCells = flowLayout.minimumInteritemSpacing * (rows - 1)

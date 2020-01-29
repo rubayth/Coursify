@@ -48,12 +48,12 @@ struct MeetingTime: Decodable {
     let buildingDescription: String?
     let room: String?
     
-    let monday: Bool?
-    let tuesday: Bool?
-    let wednesday: Bool?
-    let thursday: Bool?
-    let friday: Bool?
-    let saturday: Bool?
-    let sunday: Bool?
+    let monday: Bool
+    let tuesday: Bool
+    let wednesday: Bool
+    let thursday: Bool
+    let friday: Bool
+    let saturday: Bool
+    let sunday: Bool
 }
 

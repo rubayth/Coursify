@@ -36,12 +36,12 @@ extension HomeViewController: HomeViewable {
 }
 
 extension HomeViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if let input = searchTextfield.text {
-            //presenter?.textFieldUpdated(with: input)
-        }
-        return true
-    }
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        if let input = searchTextfield.text {
+//            //presenter?.textFieldUpdated(with: input)
+//        }
+//        return true
+//    }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         if textField.text != "" {
